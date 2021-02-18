@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+import Heading from "./Heading";
+import List from "./List";
 import reportWebVitals from './reportWebVitals';
+import App from "./App"
 
 const customStyle = {
   color: "red",
@@ -10,9 +12,14 @@ const customStyle = {
   border: "1px solid black"
 }
 
-customStyle.color="green"
-ReactDOM.render(
-  <h1 style={customStyle}>Hello</h1>,
+
+
+
+ReactDOM.render(<div>
+  {/* <h1 style={customStyle}>Hello</h1>
+  <h1 className = "heading" style={customStyle1}>{greeting}</h1> */}
+ <App />
+  </div>,
   document.getElementById('root')
 );
 
